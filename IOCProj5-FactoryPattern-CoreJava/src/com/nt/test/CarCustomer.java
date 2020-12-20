@@ -7,7 +7,7 @@ public class CarCustomer {
 	
 	public static void main(String[] args) {
 		//get Car
-		ICar car=CarFactory.getInstance("luxory");
+		ICar car=CarFactory.getInstance("sports");
 	   System.out.println(car.getClass());
 	   car.drive();
 	   car.addAccessories();

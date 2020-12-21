@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+<!-- cng dependant classes -->
+<bean id="bCourier" class ="com.nt.comps.BlueDartCourier"/>
+<bean id="dCourier" class ="com.nt.comps.DTDCCourier"/>
+<bean id="eCourier" class ="com.nt.comps.EkartCourier"/>
+
+<!-- cng target class(Flipkart) -->
+ <bean id="flipkart" class="com.nt.comps.Flipkart">
+ <property name="courier" ref="bCourier"/>
+ </bean>
+
+</beans>

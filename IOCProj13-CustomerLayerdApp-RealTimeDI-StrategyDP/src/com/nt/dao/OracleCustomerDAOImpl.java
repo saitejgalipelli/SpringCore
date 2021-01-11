@@ -7,14 +7,15 @@ import javax.sql.DataSource;
 
 import com.nt.bo.CustomerBO;
 
-public class CustomerDAOImpl implements ICustomerDAO {
+public class OracleCustomerDAOImpl implements ICustomerDAO {
 	private static final String INSERT_CUSTOMER_QUERY = "INSERT INTO LAYERED_CUSTOMER VALUES(CUSTNO_SEQ.NEXTVAL,?,?,?,?,?,?)";
 
 	private DataSource ds;
 
-	public CustomerDAOImpl(DataSource ds) {
+	public OracleCustomerDAOImpl(DataSource ds) {
 
 		this.ds = ds;
+		
 	}
 
 	@Override

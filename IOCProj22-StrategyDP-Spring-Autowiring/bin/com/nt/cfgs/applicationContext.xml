@@ -5,7 +5,7 @@
 
    <!-- Dependent class cfg -->
    <bean id="engg" class="com.nt.comps.DieselEngine"/>
-   <bean id="pEngine" class="com.nt.comps.PetrolEngine"/>
+   <bean id="pEngine" class="com.nt.comps.PetrolEngine" />
    <bean id="cngEngine" class="com.nt.comps.CNGEngine"/>
    
    <!-- Target class cfg -->

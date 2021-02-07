@@ -20,7 +20,7 @@ public class RealTimeDITest {
 		// get Controller class obj from IOC container
 		BankController controller = ctx.getBean("controller", BankController.class);
 		// read inputs from end user
-
+       //create scanner class obj
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Customer Name:");
 		String name = sc.next();
